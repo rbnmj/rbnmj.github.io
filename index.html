@@ -90,7 +90,8 @@
     <div class="container">
       <h1 class="title">About Me</h1>
       <hr />
-      <p class="justified-text">Hi, I'm Ruben, a dedicated ecologist with a passion for sustainable development and ecosystem conservation. My work involves environmental assessments, stakeholder engagement, and developing adaptive strategies to ensure the preservation of our natural environment. I have a strong background in spatial analysis, data science, and project management. Although remote sensing is my strong suit, I also enjoy occasional fieldwork for biotope or faunistic mapping. <br><br> When I'm not working on hands-on projects, you can find me dabbling in dynamical models, AI, or cryptography. Deep diving into complex and innovative topics helps me continuously sharpen my strategic problem-solving skill in a fun way.</p>
+      <p class="justified-text">Hi, I'm Ruben, a dedicated ecologist with a passion for sustainable development and ecosystem conservation. My work involves environmental assessments, stakeholder engagement, and developing adaptive strategies to ensure the preservation of our natural environment. I have a strong background in spatial analysis, data science, and project management. Although remote sensing is my strong suit, I also enjoy occasional fieldwork for biotope or faunistic mapping. <br><br> When I'm not working on hands-on projects, you can find me dabbling in dynamical models, AI, or cryptography. Deep diving into complex and innovative topics helps me continuously sharpen my strategic problem-solving skill in a fun way.</p><br>
+      <p class="has-text-centered"><b>I'm always open for projects and collaboration.</b></p>
     </div>
   </section>
   <section class="section">
@@ -189,7 +190,7 @@
               </figure>
             </div>
             <div class="media-content">
-              <p class="title is-4">older experiences coming soon</p>
+              <p class="title is-4">former experiences coming soon</p>
               <p class="subtitle is-6"></p>
             </div>
           </div>
@@ -245,7 +246,7 @@
     <div class="container">
       <h1 class="title">Projects</h1>
       <hr />
-      <p>The projects section is currently under construction. I'm aiming to showcase some of my projects in ecology, coding and modelling here. You can expect mainly projects implemented in Python in this section with some exception like my EcoRSS feed which is already functioning but has lots of improvements planned for the future.</p><br>
+      <p>This sections showcases some of my projects in ecology, coding and modelling.</p><br>
       <div class="tile is-ancestor">
         <div class="tile is-vertical is-12">
           <div class="tile">
@@ -259,7 +260,7 @@
             </div>
             <div class="tile is-parent">
               <article class="tile is-child notification">
-                <p class="title">AutoEval Sports</p>
+                <p class="title">Facility Planning</p>
                 <figure class="image is-4by3">
                   <img class="modal-trigger" data-target="project-2-modal" src="img/project-2-cover.png">
                 </figure>
@@ -267,7 +268,7 @@
             </div>
             <div class="tile is-parent">
               <article class="tile is-child notification">
-                <p class="title">empty</p>
+                <p class="title">iPM-ODE</p>
                 <figure class="image is-4by3">
                   <img class="modal-trigger" data-target="project-3-modal" src="img/project-3-cover.png">
                 </figure>
@@ -322,32 +323,26 @@
       </header>
       <section class="modal-card-body">
 
-        <div id="project-1-modal-carousel" class="carousel">
-          <figure class="image is-4by3 carousel-cell">
-            <img src="img/carousel/1.png">
-          </figure>
-          <figure class="image is-4by3 carousel-cell">
-            <img src="img/carousel/2.png">
-          </figure>
-          <figure class="image is-4by3 carousel-cell">
-            <img src="img/carousel/3.png">
-          </figure>
-        </div>
-
         <div class="content">
 
           <p>
-            Simple RSS feed of many scientific journals on all aspects of ecology and nature conservation. 
-            However, there is absolutely a bias towards more theoretical publications. Some more general journals with high impact are included as well.
-            A list of all currently included journals and their respective rss link can be found in the repository. 
-            The feed runs on <a href="https://github.com/osmoscraft/osmosfeed" target="_blank">osmosfeed</a>,
-            an RSS reader running on GitHub Pages with periodical updates via GitHub Actions.
+            <a href="https://rbnmj.github.io/ecorss/">EcoRSS</a> is a growing project that processes and aggregates RSS feeds from various ecology related journals. 
+            The project includes a build script that fetches, processes, and organizes articles into a JSON file, which is then deployed to GitHub Pages. 
+            At this point the backbone is working, but there is absolutely room for expanded functionality and scale.
+            Visit the <a href="https://github.com/rbnmj/ecorss">Repository on GitHub</a> if you are interested in contributing.
+            <br><br>
+            <b>Features</b><br>
+            <ul>
+              <li>Lightweight, up-to-date RSS feed of ecology journals.</li>
+              <li>No bias in article selection due to algorithms.</li>
+              <li>Completely open source service without monetization concerns.</li>
+              <li>Open to contributions and improvements.</li>
+            </ul>
           </p>
 
           <div class="tags">
             <span class="tag">RSS</span>
-            <span class="tag">Ecology</span>
-            <span class="tag">Journal</span>
+            <span class="tag">JavaScript</span>
             <span class="tag">HTML/CSS</span>
           </div>
 
@@ -364,31 +359,27 @@
     <div class="modal-background"></div>
     <div class="modal-card">
       <header class="modal-card-head">
-        <p class="modal-card-title">AutoEval Sports</p>
+        <p class="modal-card-title">Sports Facility Development Planning</p>
         <button class="delete" aria-label="close"></button>
       </header>
       <section class="modal-card-body">
 
-        <div id="project-2-modal-carousel" class="carousel">
-          <figure class="image is-4by3 carousel-cell">
-            <img src="img/carousel/1.png">
-          </figure>
-          <figure class="image is-4by3 carousel-cell">
-            <img src="img/carousel/2.png">
-          </figure>
-          <figure class="image is-4by3 carousel-cell">
-            <img src="img/carousel/3.png">
-          </figure>
-        </div>
-
         <div class="content">
 
-          <p>automated survey evaluation for communal sports facility development with python</p>
+          <p>
+            Planning for communal sports facility development often involves extensive citizen surveys and evaluations. Crawling through endless Excel sheets and PDFs can be a tedious task.
+            This project aims to automate the evaluation process of surveys for sports facility development concepts (<it>Sportstättenentwicklungskonzept</it>).
+            The foundation of this project are the guidelines published by the German Federal Institute for Sport Science (<it>BISp</it>).
+            The goal is not only to calculate the total need of sports facility but also consider verbal feedback through LLM-supported evaluation.
+            This is realized in Python using sklearn for machine learning implementation and accessing the OpenAI API for natural language processing.
+            <br>
+            Feel free to reach out if you're interested in using or collaborating on this project. Just shoot me an email or connect with me on LinkedIn. 
+          </p>
 
           <div class="tags">
-            <span class="tag">python</span>
-            <span class="tag">data analysis</span>
-            <span class="tag">survey</span>
+            <span class="tag">Python</span>
+            <span class="tag">Machine Learning</span>
+            <span class="tag">LLM</span>
           </div>
           
         </div>
@@ -404,31 +395,44 @@
     <div class="modal-background"></div>
     <div class="modal-card">
       <header class="modal-card-head">
-        <p class="modal-card-title">empty</p>
+        <p class="modal-card-title">iPM-ODE</p>
         <button class="delete" aria-label="close"></button>
       </header>
       <section class="modal-card-body">
 
         <div id="project-3-modal-carousel" class="carousel">
           <figure class="image is-4by3 carousel-cell">
-            <img src="img/carousel/1.png">
+            <img src="img/project-3-cover.png">
           </figure>
           <figure class="image is-4by3 carousel-cell">
-            <img src="img/carousel/2.png">
+            <img src="img/carousel/4.png">
           </figure>
           <figure class="image is-4by3 carousel-cell">
-            <img src="img/carousel/3.png">
+            <img src="img/carousel/5.png">
           </figure>
         </div>
 
         <div class="content">
 
-          <p>Lorem Ipsum</p>
+          <p>
+          <a href="https://rbnmj.github.io/iPM-ODE/">iPM-ODE</a> (<it>interactive Popuation Models with Ordinary Differential Equations</it>) is designed to help life science students understand the dynamics of ecological models and how parameter effect simulation outcomes. 
+          Created for a theoretical ecology course, it provides an accessible way to explore basic population dynamics without the frustration that may come from solely relying on differential equations. 
+          This approach is particularly beneficial for students with limited mathematical backgrounds, as it uses descriptive tools to foster a deeper understanding of key concepts.<br>
+          iPM-ODE is an object-oriented Python tool featuring a user interface built using Matplotlib Widgets.
+          <br><br>
+          <b>Features</b><br>
+          <ul>
+            <li>Interactive parameter sliders for real-time model adjustments.</li>
+            <li>Predefined ecological models for quick exploration.</li>
+            <li>Open source approach for advanced users to define and add their own models.</li>
+            <li>Visualization of population dynamics through fundamental models (e.g. Lotka-Volterra, Rosenzweig-Macarthur).</li>
+          </ul>
+          </p>
 
           <div class="tags">
-            <span class="tag"></span>
-            <span class="tag"></span>
-            <span class="tag"></span>
+            <span class="tag">Python</span>
+            <span class="tag">UI</span>
+            <span class="tag">ODE</span>
           </div>
 
         </div>
